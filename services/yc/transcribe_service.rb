@@ -14,8 +14,8 @@ module Services
 
         chunks = fetch_transcribe(trancribe_id)
         
-        return '' if chunks&.empty?
-
+        return 'not trascribed' if chunks.nil? || chunks.empty?
+        
         text = []
         chunks.each do |elem|
           text << elem['alternatives'].first['text']
