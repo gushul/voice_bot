@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'faraday'
-require 'streamio-ffmpeg'
 
 module Services
   module Telegrams

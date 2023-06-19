@@ -9,8 +9,6 @@ gem 'dotenv'
 gem 'iostreams'
 gem 'pry'
 gem 'webmock', '~> 3.12'
-
 gem 'faraday'
-gem 'pry'
 gem 'rspec'
 gem 'rubocop'
