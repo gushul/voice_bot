@@ -13,6 +13,8 @@ module Services
         trancribe_id = fetch_transcribe_id
 
         chunks = fetch_transcribe(trancribe_id)
+        
+        return '' if chunks&.empty?
 
         text = []
         chunks.each do |elem|
